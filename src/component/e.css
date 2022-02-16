@@ -186,39 +186,24 @@
              Temporary Styles
              Please replace these when you start working on the task
           */
-          /* display: flex; */
+          display: flex;
      background: #fff;
      border: 2px dashed rgba(0, 0, 0, .2);
      border-radius: 3px;
      padding: 12px;
      margin-bottom: 36px;
      min-height: 160px;
-     /* text-align: center; */
+     text-align: center;
      color: rgba(0, 0, 0, .5);
      font-size: .75em;
-     display:grid;
+     /* display: grid; */
      grid-template-columns: repeat(7, 120px);
      gap: 16px;
-     /* padding-bottom: 12px; */
+     padding: 10px;
     text-align: right;
    }
-   .flex{
-    display: flex;
-    flex-wrap:wrap;
-    align-content: flex-start;
-    background:white;
-    border-bottom: 1px solid ;
-    border-right: 1px solid;
-    border-left: 1px solid
-   }
-   /* .container {
-    display: grid;
-    grid-template-columns: repeat(7, 120px);
-    gap: 16px;
-    padding: 10px;
-   text-align: right;
-  }*/
-   .app__inputs { 
+   
+   .app__inputs {
      display: -webkit-flex;
      display: flex;
    }

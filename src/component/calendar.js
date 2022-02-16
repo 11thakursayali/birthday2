@@ -117,75 +117,90 @@ const Calendar = () => {
         <div className="app__content">
           <div id="work-area">
             <div className="calendar-container">
-              <p className="day">MON</p>
-              <div className='row'>
-                {mon.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <p className="dname">{data.name}</p>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">MON</p>
+                <div className='row'>
+                  {mon.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <p className="dname">{data.name}</p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="day">TUE</p>
-              <div className='row'>
-                {tue.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <div className="dname">{data.name}</div>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">TUE</p>
+                <div className='row'>
+                  {tue.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <div className="dname">{data.name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="day">WED</p>
-              <div className="row">
-                {wed.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <div className="dname">{data.name}</div>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">WED</p>
+                <div className="row">
+                  {wed.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <div className="dname">{data.name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="day">THU</p>
-              <div className="row">
-                {thu.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <div className="dname">{data.name}</div>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">THU</p>
+                <div className="row">
+                  {thu.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <div className="dname">{data.name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="day">FRI</p>
-              <div className="row">
-                {fri.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <div className="dname">{data.name}</div>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">FRI</p>
+                <div className="row">
+                  {fri.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <div className="dname">{data.name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="day">SAT</p>
-              <div className="row">
-                {sat.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <div className="dname">{data.name}</div>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">SAT</p>
+                <div className="row">
+                  {sat.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <div className="dname">{data.name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="day">SUN</p>
-              <div className="row">
-                {sun.map((data, key) => {
-                  return (
-                    <div key={key} className={"column key" + key}>
-                      <div className="dname">{data.name}</div>
-                    </div>
-                  );
-                })}
+              <div className='container'>
+                <p className="day">SUN</p>
+                <div className="row">
+                  {sun.map((data, key) => {
+                    return (
+                      <div key={key} className={"column key" + key}>
+                        <div className="dname">{data.name}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+
               </div>
             </div>
           </div>
@@ -230,12 +245,12 @@ const Calendar = () => {
                 <option value="2001">2001</option>
                 <option value="2000">2000</option>
               </select>
+            </div>
           </div>
-        </div>
 
-        <hr className="border-line app__border" />
+          <hr className="border-line app__border" />
+        </div>
       </div>
-    </div>
     </>
   );
 };

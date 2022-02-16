@@ -99,9 +99,22 @@ padding: 10px;
 }
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
 width: 100% !important;
 content: "";
 display: table;
 clear: both;
+} */
+.row{
+
+ width: 100%;
+content: "";
+display: table;
+clear: both;
+  /* display: grid; */
+ background:white;
+ border-bottom: 1px solid ;
+ border-right: 1px solid;
+ border-left: 1px solid;
+ align-content: flex-start;
 }
