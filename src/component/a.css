@@ -6,7 +6,6 @@
     __  __  |_  /__  ___/  __/_  __ \  __  /_  __ `/_  / / /  /    _  __ `/_  /
     _  /_/ /_  / _  /   / /_ _  / / / /_/ / / /_/ /_  /_/ // /___  / /_/ /_  /
     /_____/ /_/  /_/    \__/ /_/ /_/\__,_/  \__,_/ _\__, / \____/  \__,_/ /_/
-
 */
 
 /* ==========================================================================
@@ -186,6 +185,9 @@
        background: #fff;
        border: 2px dashed rgba(0, 0, 0, .2);
        border-radius: 3px;
+       display: flex;
+        /* flex-wrap: nowrap; */
+       flex-direction: column; 
        padding: 12px;
        margin-bottom: 36px;
        min-height: 260px;
@@ -194,6 +196,16 @@
        font-size: .75em;
    }
    
+   .flex{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    background:white;
+    border-bottom: 1px solid ;
+    border-right: 1px solid;
+    border-left: 1px solid
+   }
+
    .app__inputs {
        display: -webkit-flex;
        display: flex;
@@ -223,4 +235,3 @@
        flex: 2;
        margin-left: 24px;
    }
-   

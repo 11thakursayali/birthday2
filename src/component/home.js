@@ -66,6 +66,18 @@ class Home extends React.Component {
                                         <option value="2002">2002</option>
                                         <option value="2001">2001</option>
                                         <option value="2000">2000</option>
+                                            for (let i = 0; i < allData.length; i++) {
+      if (!allData[i].birthday || !allData[i].name || allData[i].birthday.length != 10)
+        continue;
+        let tempDateObject = new Date(allData[i].birthday);
+
+        let dateObject = new Date(
+        year,
+        tempDateObject.getMonth(),
+        tempDateObject.getDate()
+      );
+
+      }
                                     </select>
                                 </div> */}
                             </>
